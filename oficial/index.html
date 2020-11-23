@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de PI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="img/logomarca.png" class="logotipo">
+            <div class="header-text">
+                <h1> Aqui você vai aprender muito inglês</h1>
+                <span class="first-text"</span>
+                <p> Aprenda inglês de um jeito divertido com metodologias eficientes
+                    para ajudar no seu desenvolvimento profissional para te tornar
+                    realmente fluente e conseguir ter liberdade para se comunicar
+                    com o mundo.</p>
+                    <button class="normal-btn">Saiba mais</button>
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
+            </div>
+        </div>
+
+</section>
+<nav id="navbar"class="navbar">
+    <ul>
+        <li><a href="#">HOME</a><li>
+            <li><a href="#">SOBRE</a><li>
+                <li><a href="#">DEPOIMENTOS</a><li>
+                    <li><a href="#">OFERTA</a><li>
+                        <li><a href="#">CONTATO</a><li>
+    </ul>
+</nav>
+<img onclick="abrir()"src="img/menunav.png" id="menuBtn">
+
+<script>
+    
+    var menuBtn = document.getElementById("menuBtn");
+    var navbar = document.getElementById("navbar");
+
+    // navbar.style.right = "-250px";
+    // menuBtn.onclick = function){
+        function abrir(){
+           navbar.classList.toggle('navbartest');
+        }
+    //     if(navbar.style.right == "-250px"){
+    //         navbar.style.right = "0";
+    //     }
+    //      else{
+    //         navbar.style.right = "-250";
+        //  }
+    //  }
+
+</script>
+
+</body>
+</html>
