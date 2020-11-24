@@ -101,3 +101,64 @@ nav ul li a{
     z-index: 2;
     cursor: pointer;
 }
+
+/*---SOBRE---*/
+
+#sobre{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sobre_esquerda{
+    flex-basis: 50%;
+}
+.sobre_esquerda img{
+    width: 100%;
+}
+.sobre_direita{
+    flex-basis: 50%;
+    text-align: right;
+}
+.sobre-texto{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.sobre-texto h2{
+    margin: 20px 0 10px;
+    font-size: 25px;
+    font-style: italic;
+}
+.sobre-texto h3{
+    margin: 10px 0 10px;
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
+}
+
+#caract{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.caract-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.linha-1{
+    flex-basis: 25%;
+    text-align: center;
+}
+.row img{
+    width: 150px;   
+}
+.row h4{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 22px; 
+}
