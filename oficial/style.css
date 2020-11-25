@@ -108,7 +108,6 @@ nav ul li a{
     padding: 100px 0;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 .sobre_esquerda{
     flex-basis: 50%;
@@ -161,4 +160,45 @@ nav ul li a{
     justify-content: center;
     margin-bottom: 15px;
     font-size: 22px; 
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-btn{
+    margin: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#ingles{
+    padding: 100px 0;
+}
+.container-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ingles2{
+    flex-basis: 50%;
+}
+.ingles2 img{
+    width: 100%;
+}
+
+/*---contato---*/
+
+.container-contato{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-right,.contact-left{
+    flex-basis: 50%;
+}
+.contact-right img{
+    width: 100%;
 }
