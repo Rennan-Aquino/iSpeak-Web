@@ -2,19 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fredoka One', cursive
 }
 body{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6)), url('https://lh3.googleusercontent.com/proxy/yIpRB6AOdmQ4gll6hVtaEDwMafY0JrfT_eWZkEEyO1lJaDaiSB7oAOYZHi4x6tQeguyNhs4sdZrTDu0df7PCDo8nXAAPhAxN2J2BqQ3emXfo8xi45o8mo867Yyf1771rXxocmyO3tG--qwM'); 
+    background-image: linear-gradient(rgba(10, 10, 10, 0.6),rgba(5, 5, 5, 0.6)), url('https://image.freepik.com/vetores-gratis/big-ben-e-a-ponte-westminster-em-londres-a-noite-ilustracao-vetorial-no-estilo-cartoon_273525-67.jpg'); 
     background-size: cover;
     font-family: 'Roboto'sans-serif;
 }
 .container{
-    width: 600px;
+    width: 700px;
     height: 500px;
-    box-shadow: 4px 12px 20px #080808ef;
+    box-shadow: 40px 40px 30px #080808ef;
     margin: 5% auto;
     overflow: hidden;
     border-radius: 30px;
+}
+.login b{
+    font-size: 14px;
 }
 #cover{
     /* background: linear-gradient(to right, #3189b6 , #00c6ff 100%); */
@@ -49,7 +53,7 @@ body{
 #cover:target{
     /* background-image: linear-gradient(135deg, #3189b6 30%, #00c6ff 90%); */
     margin: 0;
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://image.freepik.com/fotos-gratis/big-ben-torre-do-relogio-marco-historico-em-londres-inglaterra_19485-29160.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://image.freepik.com/free-vector/koala-night-scene_1308-23948.jpg');
      background-size: cover;
 }
 #cover:target .sign-in{
@@ -70,7 +74,7 @@ body{
     text-transform: uppercase;
 }
 .login, .register{
-    background: rgb(245, 242, 242);
+    background:linear-gradient(rgba(255, 254, 254, 0.6),rgba(177, 180, 182, 0.863)), rgb(255, 255, 255);
     height: 100%;
     position: relative;
     width: 50%;
@@ -94,7 +98,7 @@ body{
     color: black;
 }
 .login p, .register p{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.3px;
     padding: 20px;
@@ -139,7 +143,7 @@ body{
 #forgot-pass{
     border-bottom: 1px solid #ccc;
     color: #000;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     letter-spacing: 0.3px;
     padding: 3px;
@@ -160,14 +164,22 @@ body{
 }
 .login .submit-btn{
     background-image: linear-gradient(135deg, #3189b6 30%, #00c6ff 90%);
+    border: 1px solid black;
 }
 .login .submit-btn:hover{
-    background: linear-gradient(to right, #3189b6 0, #00c6ff 100%);
+    background-image: linear-gradient( #ffffff 30%, #ffffff);
+    border: 1px solid black;
+    color: black;
+    transition: 1.8s;
 }
 .register .submit-btn{
     background: linear-gradient(to right, #3189b6 0, #00c6ff 100%);
+    border: 1px solid black;
 }
 .register .submit-btn:hover{
-    background-image: linear-gradient(135deg, #3189b6 30%, #05d8fd 90%);
+    background-image: linear-gradient( #ffffff 30%, #ffffff);
+    border: 1px solid black;
+    color: black;
+    transition: 1.8s;
 }
 

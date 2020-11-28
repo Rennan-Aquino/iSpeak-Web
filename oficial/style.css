@@ -1,18 +1,61 @@
 *{
-    margin: 0;3 
+    margin: 0; 
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #header{
     height: 100vh;
-    background-image: url('img/background.png');
+    /* background-image: url('img/background.png');
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
+}
+.box-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.icon-box{
+    display: flex;
+    border: 1px solid black;
+    width: 300px;
+    margin: 0 20px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.box-img img{
+    width: 100%;
+}
+.icon-box-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.h1-content {
+    margin: 12px 0 20px 0;
+}
+.div-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-img{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.div-img img{
+    height: 115vh;
+    align-self: center;
 }
 .container{
     margin-right: 100px;
     margin-left: 100px;
+    height: 100%;
 }
 .logotipo{
     margin-top: 20px;
@@ -21,6 +64,7 @@
 .header-text{
     max-width: 350px;
     margin-top: 120px;
+    width: 100%;
 }
 h1{
     font-size: 30px;   
@@ -83,7 +127,6 @@ p{
 }
 .navbartest{
     right: 0;
-
 }
 nav ul li{
     list-style: none;
@@ -112,8 +155,10 @@ nav ul li a{
 .sobre_esquerda{
     flex-basis: 20%;
 }
-.sobre_esquerda img{
-    width: 50%;
+#sobre_esquerda img{
+    height: 100vh;
+    align-self: center;
+
 }
 .sobre_direita{
     flex-basis: 50%;
@@ -135,7 +180,15 @@ nav ul li a{
     font-style: italic;
     color: gray;
 }
-
+.center{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.div-autor{
+    display: flex;
+    align-items: center;
+}
 #caract{
     padding-top: 50px;
     padding-bottom: 50px;
