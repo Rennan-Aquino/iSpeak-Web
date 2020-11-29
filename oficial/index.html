@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="img/logomarca.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de PI</title>
+    <link rel="shortcut icon" href="img/logomarca.png">
+    <title>iSpeak | Conecte-se com o mundo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <section id="header">
@@ -103,6 +104,45 @@
             </div>     
      </section>
      
+<!-- Caixa de conteudo -->
+<section class="box-content">
+    <h1 class="h1-content"> Conteúdo</h1>
+    <div class="div-content">
+
+        <div class="icon-box">
+            <div class="icon-box-text">
+                <div class="box-img">
+                    <img src="https://www.girosa.com.br/images/articles/3491/b2ap3_large_Travelling-OurLifeInTheD.jpg">
+                  </div>
+                  <h3>
+                      Expressões Frequentes
+                  </h3>
+              </div>
+          </div>
+          <div class="icon-box">
+              <div class="icon-box-text">
+                  <div class="box-img">
+                      <img src="https://www.girosa.com.br/images/articles/3491/b2ap3_large_Travelling-OurLifeInTheD.jpg">
+                    </div>
+                    <h3>
+                        Frases Básicas
+                    </h3>
+                </div>
+            </div>
+            <div class="icon-box">
+              <div class="icon-box-text">
+                  <div class="box-img">
+                      <img src="https://www.girosa.com.br/images/articles/3491/b2ap3_large_Travelling-OurLifeInTheD.jpg">
+                    </div>
+                    <h3>
+                        Expressões Diárias
+                    </h3>
+                </div>
+            </div>
+      </div>
+
+</section>
+
             <!-- conteúdo -->         
             <section id="contato">
                 <div class="container-content">
@@ -122,46 +162,6 @@
               </section>
               </div>  
 
-        <!-- Caixa de conteudo -->
-              <section class="box-content">
-                  <h1 class="h1-content"> Conteúdo</h1>
-                  <div class="div-content">
-
-                      <div class="icon-box">
-                          <div class="icon-box-text">
-                              <div class="box-img">
-                                  <img src="https://www.girosa.com.br/images/articles/3491/b2ap3_large_Travelling-OurLifeInTheD.jpg">
-                                </div>
-                                <h3>
-                                    Frases Mais Usadas
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="icon-box">
-                            <div class="icon-box-text">
-                                <div class="box-img">
-                                    <img src="https://www.girosa.com.br/images/articles/3491/b2ap3_large_Travelling-OurLifeInTheD.jpg">
-                                  </div>
-                                  <h3>
-                                      Frases Mais Usadas
-                                  </h3>
-                              </div>
-                          </div>
-                          <div class="icon-box">
-                            <div class="icon-box-text">
-                                <div class="box-img">
-                                    <img src="https://www.girosa.com.br/images/articles/3491/b2ap3_large_Travelling-OurLifeInTheD.jpg">
-                                  </div>
-                                  <h3>
-                                      Frases Mais Usadas
-                                  </h3>
-                              </div>
-                          </div>
-                    </div>
-
-              </section>
-
-              
                 <!-- footer  -->
                 <hr>
                 <section id="footer">
@@ -189,32 +189,28 @@
                                 <span>Clique aqui 1</span><br>
                                 <span>Clique aqui 1</span>
                             </div>
-                        </div>
-                        <div class="footer-right">
-                            <div class="info-footer">
-                                <div class="footer-text">
-                                     <span>contato@ispeak.com.br</span><br>
-                                    <span>Todos os direitos reservados 2020 iSpeak</span>
-                                </div>
-                                <div class="footer-logo">
-                                    <img src="img/logomarca.png">
-                                </div>
+                            <div class="footer-logo">
+                                <img class="logo-footer" src="img/logomarca.png">
+                                <div class="social-icons">
+                                    <img class="icon-social" src="img/facebook.png">
+                                    <img class="icon-social" src="img/instagram.png">
+                                    <img class="icon-social" src="img/twitter.png">
+                                    <img class="icon-social" src="img/linkedin.png">                                    
+                                </div>                            
+                                <span>contato@ispeak.com.br</span>
                             </div>
                         </div>
+                        <!-- <div class="footer-right"> -->
+                            <!-- <div class="info-footer"> -->
+                                <div class="footer-text">
+                                    <span>Todos os direitos reservados 2020 iSpeak</span>
+                                </div>
+            
+                            <!-- </div> -->
+                        <!-- </div> -->
                     </div>
-                </section>
-             
-                <!-- icones -->
-    <div class="social-icons">
-        <img src="img/facebook.png">
-        <img src="img/instagram.png">
-        <img src="img/twitter.png">
-        <img src="img/linkedin.png">
-    </div>
-
-
+                </section>   
 <script>
-    
     var menuBtn = document.getElementById("menuBtn");
     var navbar = document.getElementById("navbar");
 

@@ -1,14 +1,11 @@
 *{
     margin: 0; 
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Fredoka One', cursive;
 }
 
 #header{
     height: 100vh;
-    /* background-image: url('img/background.png');
-    background-position: center;
-    background-size: cover; */
 }
 .box-content{
     display: flex;
@@ -22,7 +19,7 @@
     border: 1px solid black;
     width: 300px;
     margin: 0 20px;
-    box-shadow: 2px 2px 2px 2px black;
+    box-shadow: 5px 10px 10px #080808ef;
 }
 .box-img img{
     width: 100%;
@@ -34,14 +31,14 @@
     justify-content: space-between;
 }
 .h1-content {
-    margin: 12px 0 20px 0;
+    margin-bottom: 70px;
+    /* margin: 12px 0 20px 0; */
 }
 .div-content{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
 .div-img{
     display: flex;
     justify-content: space-between;
@@ -59,7 +56,7 @@
 }
 .logotipo{
     margin-top: 20px;
-    width: 150px;    
+    width: 190px;    
 }
 .header-text{
     max-width: 350px;
@@ -67,7 +64,7 @@
     width: 100%;
 }
 h1{
-    font-size: 30px;   
+    font-size: 35px;   
 }
 .first-text{
     /* height: 15px; */
@@ -85,9 +82,8 @@ h1{
     cursor: pointer;
 }
 p{
-    font-size: 20px;
-    line-height: 25px;
-    color: rgb(66, 64, 66);
+    font-size: 23px;
+    color: rgb(119, 117, 119);
 
 }
 .header-text button{
@@ -176,7 +172,7 @@ nav ul li a{
 }
 .sobre-texto h3{
     margin: 10px 0 10px;
-    font-size: 20px;
+    font-size: 19px;
     font-style: italic;
     color: gray;
 }
@@ -235,16 +231,20 @@ nav ul li a{
     align-items: center;
     flex-wrap: wrap;
 }
+.content-text{
+    margin-top: 220px;
+}
 .content-text h1{
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
 }
 .sobre-img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25vw;
+    width: 30vw;
+    margin-bottom: 50px;
 }
 .sobre-texto{
     width: 50%;
@@ -260,15 +260,16 @@ nav ul li a{
     margin-bottom: 20px;
 }
 .sobre-texto p{
-    color: black;
-    font-size: 17px;
+    color: rgb(119, 117, 119);
+    font-size: 23px;
     margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 /*--- Footer ---*/
 
 #footer{
-    padding: 50px 0 30px;
+    padding: 0px 0 5px;
 }
 hr{
     width: 100%;
@@ -285,17 +286,24 @@ hr{
     flex-basis: 50%;
     margin-top: 20px;
 }
-footer-right{
-    flex-basis: 60%;
+
+.footer-text{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
 }
 .footer-links{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .title-link h3{
+    display: flex;
     color: violet;
+    margin-bottom: 10px;
+    justify-content: center;
 }
 .title-link span{
     font-size: 20px;
@@ -304,9 +312,13 @@ footer-right{
 .info-footer{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
+    /* text-align: ; */
 }
-.footer-logo img{
+.logo-footer{
     width: 150px;
+    margin-right: 20px;
+}
+.icon-social{
+    width: 30px;
+    margin: 3px;
 }
