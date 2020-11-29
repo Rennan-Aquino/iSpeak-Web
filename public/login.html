@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário iSpeak</title>
     <link rel="shortcut icon" href="img/logomarca.png">
-    <link href="loginpage.css" rel="stylesheet">
+    <link href="css/loginpage.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nerko+One&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -35,11 +35,11 @@ Clique abaixo e faça parte dessa comunidade.<br>Seu futuro começa hoje!</p>
             <p><b>
                 Conecta-se com suas redes sociais:</b></p>
 
-<form method="POST">
-    <div class="div-logo">
+     <form id="form_login" method="post" onsubmit="return entrar()">    
+        <div class="div-logo">
         <div class="div-img-logo">
-            <input type="email" placeholder="Digite seu email" class="input-field"><br>
-            <input type="password" placeholder="Digite sua senha" class="input-field"><br>
+            <input type="email" placeholder="Digite seu email" class="input-field" name="email"><br>
+            <input type="password" placeholder="Digite sua senha" class="input-field" name="senha"><br>
             <a id="forgot-pass" href="#"><b>Esqueceu sua senha?</a><br></b>
             <input type="submit" type="submit" value="Entrar" class="submit-btn">
         </div>
@@ -55,13 +55,67 @@ Clique abaixo e faça parte dessa comunidade.<br>Seu futuro começa hoje!</p>
             <span class="social-login"><i class="fa fa-instagram"></i></span>
             <p><b>
 Conecta-se com suas redes sociais:</b></p>
-    <form method="POST">
-                <input type="text" placeholder="Digite seu nome" class="input-field"><br>
-                <input type="email" placeholder="Digite seu melhor email" class="input-field"><br>
-                <input type="password" placeholder="Crie uma senha segura" class="input-field"><br>
+<form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                <input type="text" placeholder="Digite seu nome" class="input-field" name="nome"><br>
+                <input type="email" placeholder="Digite seu melhor email" class="input-field" name="email"><br>
+                <input type="password" placeholder="Crie uma senha segura" class="input-field" name="senha"><br>
                 <input class="submit-btn" type="submit" value="Cadastrar">
             </form>
 </div>
 </div>
 </body>
 </html>
+<script>
+    function cadastrar() {
+
+var formulario = new URLSearchParams(new FormData(form_cadastro));
+fetch("/usuarios/cadastrar", {
+    method: "POST",
+    body: formulario
+}).then(function (response) {
+
+    if (response.ok) {
+        window.location.href='login.html';
+    } else {
+        console.log('Erro de cadastro!');
+        response.text().then(function (resposta) {
+            div_erro.innerHTML = resposta;
+        });
+    }
+});
+
+return false;
+}
+
+function entrar() {
+
+var formulario = new URLSearchParams(new FormData(form_login));
+fetch("/usuarios/autenticar", {
+    method: "POST",
+    body: formulario
+}).then(resposta => {
+
+    if (resposta.ok) {
+
+        resposta.json().then(json => {
+
+            sessionStorage.login_usuario_meuapp = json.login;
+            sessionStorage.nome_usuario_meuapp = json.nome;
+
+            window.location.href = 'sobre.html';
+        });
+
+    } else {
+        alert('login invalido');
+        console.log('Erro de login!');
+
+        resposta.text().then(texto => {
+            console.error(texto);
+
+        });
+    }
+});
+
+return false;
+}
+</script>
