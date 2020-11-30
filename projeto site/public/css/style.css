@@ -1,0 +1,325 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+#header{
+    height: 100vh;
+}
+.box-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.icon-box{
+    display: flex;
+    border: 1px solid black;
+    width: 300px;
+    margin: 0 20px;
+    box-shadow: 5px 10px 10px #080808ef;
+}
+.box-img img{
+    width: 100%;
+}
+.icon-box-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.h1-content {
+    margin-bottom: 70px;
+    /* margin: 12px 0 20px 0; */
+}
+.div-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.div-img{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.div-img img{
+    height: 115vh;
+    align-self: center;
+}
+.container{
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 100%;
+}
+.logotipo{
+    margin-top: 20px;
+    width: 190px;    
+}
+.header-text{
+    max-width: 350px;
+    margin-top: 120px;
+    width: 100%;
+}
+h1{
+    font-size: 35px;   
+}
+.first-text{
+    /* height: 15px; */
+    /* width: 15px; */
+    display: inline-block;
+    /* background: cyan; */
+    margin: 15px 0;
+}
+.normal-btn{
+    font-size: 20px;
+    padding: 25px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(33, 207, 230);
+    font-weight: bold;
+    cursor: pointer;
+}
+p{
+    font-size: 23px;
+    color: rgb(119, 117, 119);
+
+}
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.line-1{
+    width: 20px;
+    height: 20px;
+    background-color: violet;
+    display: inline-block;
+}
+.line-2{
+    width: 80px;
+    height: 1px;
+    background-color: violet;
+    display: inline-block;
+}
+.line-3{
+    width: 60px;
+    height: 1px;
+    background-color: violet;
+    display: inline-block;
+}
+.line{
+    line-height: 15px;
+}
+.navbar{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: rgb(32, 197, 219);
+    z-index: 2;
+    transition: right 0.6s;
+}
+.navbartest{
+    right: 0;
+}
+nav ul li{
+    list-style: none;
+    margin: 40px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 70px;
+    top: 40px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/*---SOBRE---*/
+
+#sobre{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+.sobre_esquerda{
+    flex-basis: 20%;
+}
+#sobre_esquerda img{
+    height: 100vh;
+    align-self: center;
+
+}
+.sobre_direita{
+    flex-basis: 50%;
+    text-align: right;
+}
+.sobre-texto{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.sobre-texto h2{
+    margin: 20px 0 10px;
+    font-size: 25px;
+    font-style: italic;
+}
+.sobre-texto h3{
+    margin: 10px 0 10px;
+    font-size: 19px;
+    font-style: italic;
+    color: gray;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.div-autor{
+    display: flex;
+    align-items: center;
+}
+#caract{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.caract-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.linha-1{
+    flex-basis: 25%;
+    text-align: center;
+}
+.row img{
+    width: 150px;   
+}
+.row h4{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 22px; 
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-btn{
+    margin: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#ingles{
+    padding: 0;
+}
+.container-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content-text{
+    margin-top: 220px;
+}
+.content-text h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+.sobre-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    margin-bottom: 50px;
+}
+.sobre-texto{
+    width: 50%;
+    padding: 0 50px;
+}
+.sobre-img img{max-width: 100%;}
+
+.section.sobre-criador{
+    padding:40px 0;
+}
+.sobre-texto h2{
+    color:rgb(8, 8, 8);
+    margin-bottom: 20px;
+}
+.sobre-texto p{
+    color: rgb(119, 117, 119);
+    font-size: 23px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+/*--- Footer ---*/
+
+#footer{
+    padding: 0px 0 5px;
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 3px solid rgb(33, 207, 230);
+}
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left{
+    flex-basis: 50%;
+    margin-top: 20px;
+}
+
+.footer-text{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.title-link h3{
+    display: flex;
+    color: violet;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.title-link span{
+    font-size: 20px;
+    color: gray;
+}
+.info-footer{
+    display: flex;
+    align-items: center;
+    /* text-align: ; */
+}
+.logo-footer{
+    width: 150px;
+    margin-right: 20px;
+}
+.icon-social{
+    width: 30px;
+    margin: 3px;
+}
