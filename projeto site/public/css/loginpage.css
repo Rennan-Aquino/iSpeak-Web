@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fredoka One', cursive
+    font-family: 'Merriweather', serif;
+
 }
 body{
     background-image: linear-gradient(rgba(10, 10, 10, 0.6),rgba(5, 5, 5, 0.6)), url('https://image.freepik.com/vetores-gratis/big-ben-e-a-ponte-westminster-em-londres-a-noite-ilustracao-vetorial-no-estilo-cartoon_273525-67.jpg'); 
@@ -37,7 +38,7 @@ body{
     padding-top: 38%;
 }
 #cover p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'ABeeZee', sans-serif;
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
