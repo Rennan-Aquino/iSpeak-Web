@@ -188,10 +188,18 @@ body{
     color: black;
     transition: 1.2s;
 }
-.div-logo{
+.div-seta{
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+.img-load{
+    margin-left: 142px;
+    width: 60px;
+    height: 60px;
+}
+.load-two{
+    margin-left: 150px;
 }
 .login img{
     height: 53px;
