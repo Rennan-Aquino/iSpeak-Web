@@ -4,10 +4,13 @@
     font-family: 'Rubik', sans-serif;
 }
 body{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(7, 7, 7, 0.582)) ,url('../img/winter-canada.jpg') no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(7, 7, 7, 0.966)) ,url('../img/winter-canada.jpg') no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+}
+#audio_id{
+    outline: none;
 }
 p{
     font-family: 'Karla', sans-serif;
@@ -15,7 +18,6 @@ p{
 }
 .content-text{
     display: flex;
-    height: 20vh;
     width: 100%;
     flex-direction: column;
 }
@@ -23,7 +25,17 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4vh;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+.btn-index-a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: white;
 }
 .content-text h1{
     display: flex;
@@ -33,6 +45,7 @@ p{
     align-items: center;
     height: 50%;
     width: 100%;
+    margin-top: 20px;
 }
 .content-text h2{
     display: flex;
@@ -42,25 +55,28 @@ p{
     align-items: center;
     height: 25%;
     width: 100%;
+    margin-top: 20px;
 }
 
 .box{
-    height: 70%;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+
 }
 .div-border{
     border: 3px solid rgb(36 197 219);
-    height: 100%;
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
+.btn-audio{
+    display: flex;
+    justify-content: space-evenly;
+    width: 10%;
+}
 .content-left{
     display: flex;
-    height: 90%;
     width: 48%;
     justify-content: flex-end;
     align-items: center;
@@ -73,7 +89,6 @@ p{
 .content-right{
     display: flex;
     justify-content: flex-start;
-    height: 90%;
     width: 48%;
     align-items: center;
 }

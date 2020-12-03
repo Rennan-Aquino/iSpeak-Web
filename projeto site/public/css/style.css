@@ -3,13 +3,14 @@
     padding: 0;
     font-family: 'Merriweather', serif;
 }
-
 p{
     font-size: 23px;
     color: rgb(100, 98, 100);
     font-family: 'ABeeZee', sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 #header{
     height: 100vh;
 }
@@ -28,13 +29,10 @@ p{
     transition: all 0.3s;
     border-radius: 30px;
 }
-
 .icon-box:hover{
     transform: scale(1.1);
     box-shadow: 4px 4px 16px 0px rgba(44,44,44,.25);
-
 }
-
 .box-img img{
     width: 100%;
     border-radius: 30px;
@@ -50,7 +48,6 @@ p{
     margin-bottom: 15px;
 }
     
-
 .h1-content {
     margin-bottom: 70px;
     /* margin: 12px 0 20px 0; */
@@ -69,7 +66,6 @@ p{
     justify-content: space-between;
     height: 100%;
 }
-
 .div-img img{
     height: 115vh;
     align-self: center;
@@ -198,6 +194,7 @@ nav ul li a{
     margin: 20px 0 10px;
     font-size: 20px;
     font-style: italic;
+    font-size: 25px;
 }
 .sobre-texto h3{
     margin: 10px 0 10px;
@@ -309,7 +306,6 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .footer-left{
     flex-basis: 50%;
@@ -326,13 +322,13 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 .title-link h3{
     display: flex;
-    color: #ff839d;
+    color: #fd5876;
     margin-bottom: 10px;
     justify-content: center;
+    font-size: 23px;
 }
 .title-link span{
     font-size: 20px;
@@ -343,10 +339,16 @@ hr{
     align-items: center;
 }
 .logo-footer{
-    width: 150px;
+    width: 170px;
     margin-right: 20px;
+    margin-left: 9px;
 }
 .icon-social{
     width: 30px;
-    margin: 3px;
+    margin: 5px;
+    cursor: pointer;
+}
+.icon-social:hover{
+    transform: scale(1.4);
+    box-shadow: 4px 4px 16px 0  px rgba(44, 44, 44, 0.25);
 }
